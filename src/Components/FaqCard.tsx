@@ -11,8 +11,8 @@ function FaqCard() {
   }
 
   return (
-    <article className="bg-White-FFF dropShadow mx-6 my-[8.91rem] max-w-[37.5rem] rounded-lg p-6">
-      <h2 className="text-DarkPurple-301534 mb-6 flex items-center gap-6 text-[2rem] leading-[2.375rem] font-bold">
+    <article className="bg-White-FFF dropShadow mx-6 my-[8.91rem] max-w-[37.5rem] rounded-lg p-6 lg:p-10">
+      <h2 className="text-DarkPurple-301534 mb-6 flex items-center gap-6 text-[2rem] leading-[2.375rem] font-bold lg:mb-9 lg:text-[3.5rem] lg:leading-[4.11rem]">
         <img src={starIcon} alt="Star Icon" className="w-6" />
         <span>FAQs</span>
       </h2>

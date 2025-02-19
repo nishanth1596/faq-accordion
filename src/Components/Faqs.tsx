@@ -16,22 +16,22 @@ function Faqs({ item, isLastIndex, handleClick, showId }: FaqsProps) {
   return (
     <>
       <div className="flex w-full items-center justify-between gap-6">
-        <h3 className="text-DarkPurple-301534 leading-[1.19rem] font-semibold">
+        <h3
+          className="text-DarkPurple-301534 hover:text-Pink-AD28EB leading-[1.19rem] font-semibold hover:cursor-pointer lg:text-lg lg:leading-[1.32rem]"
+          onClick={() => handleClick(item.id)}
+        >
           {item.question}
         </h3>
 
-        <div>
-          <button
-            onClick={() => handleClick(item.id)}
-            className="h-[1.875rem] w-[1.875rem]"
-          >
+        <button onClick={() => handleClick(item.id)}>
+          <div className="h-[1.875rem] w-[1.875rem]">
             {showId === item.id ? (
               <img src={minusIcon} alt="Minus Icon" />
             ) : (
               <img src={plusIcon} alt="Plus Icon" />
             )}
-          </button>
-        </div>
+          </div>
+        </button>
       </div>
 
       <p
@@ -44,5 +44,3 @@ function Faqs({ item, isLastIndex, handleClick, showId }: FaqsProps) {
 }
 
 export default Faqs;
-
-// ml-5 h-[1.875rem] w-[1.875rem]
