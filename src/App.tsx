@@ -8,6 +8,7 @@ function App() {
       </header>
       <main>
         <section>
+          <h2 className="sr-only">FM Faq Accordian</h2>
           <FaqCard />
         </section>
       </main>
