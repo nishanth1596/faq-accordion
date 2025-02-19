@@ -17,7 +17,7 @@ function Faqs({ item, isLastIndex, handleClick, showId }: FaqsProps) {
     <>
       <div className="flex w-full items-center justify-between gap-6">
         <button
-          className="text-DarkPurple-301534 hover:text-Pink-AD28EB text-left leading-[1.19rem] font-semibold hover:cursor-pointer lg:text-lg lg:leading-[1.32rem]"
+          className="text-DarkPurple-301534 hover:text-Pink-AD28EB text-left leading-[1.19rem] font-semibold transition-all duration-300 ease-in hover:cursor-pointer lg:text-lg lg:leading-[1.32rem]"
           onClick={() => handleClick(item.id)}
         >
           {item.question}
@@ -37,7 +37,7 @@ function Faqs({ item, isLastIndex, handleClick, showId }: FaqsProps) {
       </div>
 
       <p
-        className={`border-LightPink-F8EEFF text-PalePurple-8B6990 ${!isLastIndex ? "mb-5 border-b pb-5" : "mb-0 pb-0"} ${showId === item.id ? "mt-6" : ""} text-sm leading-[1.5] font-normal`}
+        className={`border-LightPink-F8EEFF text-PalePurple-8B6990 transition-all duration-300 ease-in ${!isLastIndex ? "mb-5 border-b pb-5" : "mb-0 pb-0"} ${showId === item.id ? "mt-6" : ""} text-sm leading-[1.5] font-normal`}
       >
         {showId === item.id && item.answer}
       </p>
